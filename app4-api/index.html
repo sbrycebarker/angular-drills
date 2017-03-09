@@ -1,7 +1,55 @@
-<html ng-app="apiApp">
-	<body>
-		
-				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+<html ng-app="myApp">
+<link rel="stylesheet" href="style.css"></link>
+	<body ng-controller="myCtrl">
+
+
+		<div class="starships">
+		<div class="ships" ng-repeat="ship in ships">
+			<ul>
+				<li>
+					<div class="title">{{ship.name}}
+					</div>
+		<p>
+					Model: {{ship.model}}<br>
+					Class: {{ship.starship_class}}
+					Cost: {{ship.cost_in_credits}}<br>
+					Cargo capacity: {{ship.cargo_capacity}}<br>
+					Crew: {{ship.crew}}<br>
+					Passengers: {{ship.passengers}}<br>
+					Rating: {{ship.hyperdrive_rating}}<br>
+					Manufacturer: {{ship.manufacturer}}<br>
+					Speed: {{ship.max_atmosphering_speed}}<br>
+		</p>
+				</li>
+		</ul>
+
+	</div>
+</div>
+<div class="system">
+
+	<div class="planets" ng-repeat="planet in planets">
+		<ul>
+			<li>
+		<p>
+			{{planet.name}}
+			{{planet.climate}}
+			{{planet.diameter}}
+			{{planet.films}}
+			{{planet.gravity}}
+			{{planet.orbital_period}}
+			{{planet.population}}
+			{{planet.rotation_period}}
+			{{planet.surface_water}}
+			{{planet.terrain}}
+
+		</p>
+		</li>
+	</ul>
+</div>
+	</div>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>

@@ -3,6 +3,10 @@
 	width: 100%;
 }
 .personData {
-	width: 24%;	
+	height: auto;
+	width: auto;
+	margin: 2px;
+	border: 1px black solid;
 	display: inline-block;
+	background-color: yellow;
 }

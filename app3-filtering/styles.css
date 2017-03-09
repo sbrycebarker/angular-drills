@@ -1,0 +1,8 @@
+ul .info {
+  height: auto;
+  width: auto;
+  background-color: #2b4f8b;
+  border: solid black 1px;
+  border-radius: 25px;
+  padding-left: 10%;
+}
